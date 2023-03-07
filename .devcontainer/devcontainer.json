@@ -1,0 +1,5 @@
+{
+	"image": "node",
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=/root/vscode_remote,target=/workspace,type=volume"
+}
