@@ -1,5 +1,13 @@
 {
-	"image": "node",
-  "workspaceFolder": "/workspace",
-  "workspaceMount": "source=/root/vscode_remote,target=/workspace,type=volume"
+  "name": "remote-test",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Application",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "forwardPorts": [3000]
 }
