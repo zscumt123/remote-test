@@ -3,6 +3,8 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=remote_test,target=/workspace,type=volume",
   "portsAttributes": {
     "3000": {
       "label": "Application",
